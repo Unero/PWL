@@ -28,15 +28,11 @@ class Welcome extends CI_Controller {
 		echo "Ini adalah function percobaan";
 	}
 
-	// Tugas 01
-	public function belajar()
-	{
-		echo "Saya belajar Code Igniter";
+	public function belajar(){
+		echo "Saya belajar CodeIgniter";
 	}
 
-	// Tugas 02
-	public function belajar_kedua()
-	{
+	public function belajar_kedua(){
 		echo "Saya sedang belajar pemrograman framework";
 	}
 }
