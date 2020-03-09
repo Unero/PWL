@@ -1,1 +1,0 @@
-    <h1>Saya belajar CodeIgniter</h1>
