@@ -1,4 +1,6 @@
+
 @extends('master')
+@extends('layouts.app')
 @section('title', 'Home')
 @section('judul_halaman', 'Data Mahasiswa')
 

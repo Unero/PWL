@@ -3,7 +3,7 @@
 @section('judul_halaman', 'Detail Data Mahasiswa')
 
 @section('konten')
-    <a href="/mahasiswa" class="btn btn-danger">Kembali</a>
+    <a href="/" class="btn btn-danger">Kembali</a>
     <br><br>
     @foreach($mahasiswa as $mhs)
     <h5 class="card-title">{{ $mhs->nama }}</h5>

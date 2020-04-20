@@ -2,9 +2,9 @@
 @section('title', 'Tambah Data')
 @section('judul_halaman', 'Tambah Data Mahasiswa')
 @section('konten')
-    <a href="/mahasiswa" class="btn btn-danger">Kembali</a>
+    <a href="/" class="btn btn-danger">Kembali</a>
     <br><br>
-    <form action="/laravel-crud/public/mahasiswa/simpan" method="post">
+    <form action="/mahasiswa/simpan" method="post">
         {{ csrf_field() }}
         <div class="form-group">
           <label for="namamhs">Nama</label>

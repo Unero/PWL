@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MahasiswaController@index');
+Route::get('/', function () {
+    return view ('welcome');
+}); 
+
+Route::get('/mahasiswa', 'MahasiswaController@index');
 
 Route::get('/mahasiswa/tambah', 'MahasiswaController@tambah');
 
@@ -26,3 +30,9 @@ Route::get('/mahasiswa/edit/{id}', 'MahasiswaController@edit');
 Route::post('/mahasiswa/update', 'MahasiswaController@update');
 
 Route::get('/mahasiswa/hapus/{id}', 'MahasiswaController@hapus');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/admin/users', 'Admin\UsersController',['except' => ['show', 'create', 'store']]);

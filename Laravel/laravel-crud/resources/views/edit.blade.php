@@ -3,10 +3,10 @@
 @section('judul_halaman', 'Edit Data Mahasiswa')
 
 @section('konten')
-    <a href="/mahasiswa" class="btn btn-danger">Kembali</a>
+    <a href="/" class="btn btn-danger">Kembali</a>
     <br><br>
     @foreach($mahasiswa as $mhs)
-    <form action="/laravel-crud/public/mahasiswa/update" method="post">
+    <form action="/mahasiswa/update" method="post">
         {{ csrf_field() }}
         <input type="hidden" name="id" value="{{ $mhs->id }}"><br>
         <div class="form-group">
